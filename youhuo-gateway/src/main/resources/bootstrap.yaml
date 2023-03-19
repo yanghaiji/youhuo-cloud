@@ -1,0 +1,43 @@
+server:
+  port: 9080
+spring:
+  application:
+    name: gateway-server
+  profiles:
+    active: dev
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: system-server # 路由的编号
+          uri: lb://system-server
+          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+            - Path=/system/api/**
+          filters:
+#            这样的方式不生效
+            - RewritePath=/system/api/v3/api-docs, /v3/api-docs # 配置，保证转发到 /v3/api-docs
+#            - RewritePath=/system/api/v3/api-docs/(?<segment>/?.*), /v3/api-docs/$\{segment}
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeader: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+
+
+knife4j:
+  gateway:
+    enable: true
+  basic:
+    enable: true
+    # Basic认证用户名
+    username: admin
+    # Basic认证密码
+    password: admin123456

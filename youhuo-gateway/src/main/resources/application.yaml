@@ -1,0 +1,13 @@
+#knife4j:
+#  # 聚合swagger文档
+#  gateway:
+#    enable: true
+#    routes:
+#      - name: 用户服务
+#        url: /system-server/system/apiv3/api-docs?group=default
+#        service-name: system-server
+#        order: 2
+#      - name: 用户服务2
+#        url: /api-docs?group=default
+#        service-name: system-server
+#        order: 3

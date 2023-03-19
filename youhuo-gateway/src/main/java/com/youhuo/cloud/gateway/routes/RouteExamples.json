@@ -1,0 +1,14 @@
+{
+  "id": "system-server",
+  "predicates": [
+    {
+      "name": "Path",
+      "args": {
+        "_genkey_0": "/system/api/**"
+      }
+    }
+  ],
+  "filters": [],
+  "uri": "lb://system-server",
+  "order": 0
+}

@@ -1,0 +1,5 @@
+# Project exclude paths
+/youhuo-components/youhuo-common/target/
+/youhuo-components/youhuo-system-api/target/
+/youhuo-gateway/target/
+/youhuo-system/target/
