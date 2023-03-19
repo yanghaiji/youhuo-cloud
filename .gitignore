@@ -3,3 +3,7 @@
 /youhuo-components/youhuo-system-api/target/
 /youhuo-gateway/target/
 /youhuo-system/target/
+/logs
+*.iml
+.idea
+**/target
