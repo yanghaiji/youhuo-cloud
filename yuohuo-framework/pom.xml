@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>youhuo-spring-boot-starter-sawwger</module>
+        <module>youhuo-spring-boot-starter-mybatis</module>
     </modules>
 
 

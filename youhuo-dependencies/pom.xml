@@ -19,6 +19,7 @@
         <springfox.version>2.9.2</springfox.version>
         <knife4j.version>4.0.0</knife4j.version>
         <knife4j.boot.version>3.0.3</knife4j.boot.version>
+        <druid.version>1.2.15</druid.version>
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <mybatis-plus-generator.version>3.5.3.1</mybatis-plus-generator.version>
         <dynamic-datasource.version>3.6.1</dynamic-datasource.version>
@@ -109,11 +110,37 @@
                 <artifactId>knife4j-gateway-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
             </dependency>
-
+            <!--连接池-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId> <!-- 代码生成器，使用它解析表结构 -->
+                <version>${mybatis-plus-generator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId> <!-- 多数据源 -->
+                <version>${dynamic-datasource.version}</version>
+            </dependency>
             <!-- api end-->
             <dependency>
                 <groupId>com.youhuo.cloud</groupId>
                 <artifactId>youhuo-spring-boot-starter-sawwger</artifactId>
+                <version>${youhuo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.youhuo.cloud</groupId>
+                <artifactId>youhuo-spring-boot-starter-mybatis</artifactId>
                 <version>${youhuo.version}</version>
             </dependency>
             <dependency>
