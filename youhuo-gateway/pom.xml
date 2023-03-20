@@ -51,19 +51,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-gateway-webflux</artifactId>
         </dependency>
-        <!-- 工具类相关 -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.youhuo.cloud</groupId>
             <artifactId>youhuo-spring-boot-starter-sawwger</artifactId>
@@ -82,7 +69,6 @@
         <dependency>
             <groupId>com.youhuo.cloud</groupId>
             <artifactId>youhuo-system-api</artifactId>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

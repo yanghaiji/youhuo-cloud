@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>youhuo-spring-boot-starter-sawwger</artifactId>
-    <version>${youhuo.version}</version>
+    <version>0.1-SNAPSHOT</version>
     <dependencies>
 
         <dependency>
